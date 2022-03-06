@@ -1,7 +1,12 @@
 {
   "name": "peridot-php/peridot",
   "description": "Event driven BDD test framework for PHP 7.1+",
-  "keywords": ["BDD", "TDD", "testing", "PHP"],
+  "keywords": [
+    "BDD",
+    "TDD",
+    "testing",
+    "PHP"
+  ],
   "license": "MIT",
   "authors": [
     {
@@ -14,10 +19,9 @@
     }
   ],
   "require": {
-    "php": ">=7.1",
+    "php": ">=7.4",
     "evenement/evenement": "^3.0 || ^2.0",
     "symfony/console": "^4",
-    "phpunit/php-timer": "^2",
     "peridot-php/peridot-scope": "^1"
   },
   "require-dev": {
@@ -34,10 +38,12 @@
       "fixtures/error-polyfill.php"
     ]
   },
-  "bin": ["bin/peridot"],
+  "bin": [
+    "bin/peridot"
+  ],
   "config": {
     "platform": {
-      "php": "7.2"
+      "php": "7.4"
     }
   }
 }

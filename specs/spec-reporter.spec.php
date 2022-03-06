@@ -70,7 +70,7 @@ describe('SpecReporter', function() {
         });
 
         it('should output time', function() {
-            $time = Timer::secondsToTimeString($this->reporter->getTime());
+            $time = $this->reporter->getTime() . ' seconds';
             assert(strstr($this->contents, $time) !== false, 'should contain time text');
         });
 
